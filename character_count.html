@@ -1,0 +1,7 @@
+<input id="input" maxlength="50">
+<p>charcter <span id="count">0</span></p>
+<script>
+    document.getElementById("input").addEventListener("input",function(){
+    document.getElementById("count").innerText=this.value.length;
+    });
+</script>
