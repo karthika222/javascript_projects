@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Dark/Light Mode</button>
+
+    <h3 id="t">Hello World!</h3>
+</body>
+<style>
+    body{
+        background-color:white;
+    }
+</style>
+<script>
+    document.getElementById('btn').addEventListener('click', function(){
+     let body=document.body;
+     let h3=document.getElementById('t');
+     body.style.backgroundColor==="white"?body.style.backgroundColor="black":body.style.backgroundColor="white";
+     if (body.style.backgroundColor==="black")  
+     {
+        h3.style.color="white";
+    }
+    else{
+        h3.style.color="black";
+    }
+    });
+</script>
+</html>
