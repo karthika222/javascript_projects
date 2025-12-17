@@ -1,0 +1,18 @@
+<input id="task" placeholder="Enter task">
+<button id="add">Add</button>
+<ul id="list"></ul>
+
+<script>
+    document.getElementById("add").onclick=function() {
+        let task = document.getElementById("task").value;
+        if (task) {
+            let li = document.createElement("li");
+            li.textContent = task;
+            document.getElementById("list").appendChild(li);
+            document.getElementById("task").value = "";
+        }
+        else{
+            alert("please enter a task:");
+        }
+};
+</script>
